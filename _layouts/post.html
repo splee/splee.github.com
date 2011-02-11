@@ -1,8 +1,11 @@
 ---
 layout: default
 ---
-<article class="post">
+<div class="grid_3"></div>
+<article class="post grid_6">
     <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
     <div id="date">published <time>{{ page.date | date_to_string }}</time></div>
     <div class="content">{{ page.content }}</div>
 </article>
+<div class="grid_3"></div>
+<div class="clear"></div>

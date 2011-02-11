@@ -3,15 +3,19 @@ layout: default
 title: splee.io
 ---
 {% assign first_post = site.posts.first %}
-<article class="post">
+<div class="grid_3"></div>
+<article class="post grid_6">
     <h2><a href="{{ first_post.url }}">{{ first_post.title }}</a></h2>
     <div id="date">published <time>{{ first_post.date | date_to_string }}</time></div>
     <div class="content">{{ first_post.content }}</div>
 </article>
+<div class="grid_3"></div>
+<div class="clear"></div>
 
 <hr />
 
-<section>
+<div class="grid_3"></div>
+<section class="grid_6">
     <h2>Archive</h2>
     <nav>
         <ul id="archive">
@@ -21,3 +25,5 @@ title: splee.io
         </ul>
     </nav>
 </section>
+<div class="grid_3"></div>
+<div class="clear"></div>
