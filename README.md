@@ -7,7 +7,7 @@ Powered by Jekyll and GitHub.
 ## License
 
 The following directories and their contents are Copyright Lee McFadden.  You
-may not reuse anything therin without my permission
+may not reuse anything therein without my permission
 
 * \_posts/
 * images/
