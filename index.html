@@ -6,10 +6,12 @@ title: splee.io
 <div class="row">
     <article class="post col_10 col">
         <h2><a href="{{ first_post.url }}">{{ first_post.title }}</a></h2>
+        <div class="meta">
+            Published <time>{{ first_post.date | date_to_string }}</time>
+        </div>
         {{ first_post.content }}
     </article>
-    <aside class="col col_6 meta">
-        Published <time>{{ first_post.date | date_to_string }}</time>
+    <aside class="col col_6 social">
     </aside>
 </div>
 <div class="clear"></div>

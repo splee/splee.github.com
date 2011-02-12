@@ -5,10 +5,12 @@ layout: default
 <div class="row">
     <article class="post col_10 col">
         <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+        <div class="meta">
+            Published <time>{{ page.date | date_to_string }}</time>
+        </div>
         {{ page.content }}
     </article>
-    <aside class="col col_6 meta">
-        Published <time>{{ page.date | date_to_string }}</time>
+    <aside class="col col_6 social">
     </aside>
 </div>
 <div class="clear"></div>
