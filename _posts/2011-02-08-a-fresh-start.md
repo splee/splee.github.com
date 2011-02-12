@@ -5,9 +5,9 @@ layout: post
 
 My writing has been almost non-existant for the past couple of years and I'm
 yet to find a real reason why. Maybe I just haven't had anything interesting to
-write about. Maybe it's all Twitter's fault.  It's probably just a preference
-for relaxing after a long day at work; work that I pour all my creativity into,
-leaving only the scraps for my own projects.
+write about. Maybe it's all [Twitter's](http://twitter.com/splee) fault.  It's
+probably just a preference for relaxing after a long day at work; work that I
+pour all my creativity into, leaving little for my own projects.
 
 Whatever the reason, it's going to change.
 
