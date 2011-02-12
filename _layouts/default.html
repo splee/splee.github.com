@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>splee.io - {{ page.title }}</title>
+    <meta charset=utf-8>
+    <title>splee.co.uk - {{ page.title }}</title>
     <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/text.css" />
-    <link rel="stylesheet" href="/css/960.css" />
+    <link rel="stylesheet" href="/css/grid.css" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <script src="/js/html5.js"></script>
 </head>
 <body>
-    <header class="container_12">
-        <div class="grid_6">
+<div class="row">
+    <header>
+        <div class="logo left">
             <h1><a href="/">splee.blog</a></h1>
         </div>
-        <nav class="grid_6">
-            <a href="http://twitter.com/splee">Twitter</a>
-            <a href="http://github.com/splee/">Github</a>
+        <nav class="social right">
+            <a href="http://twitter.com/splee" class="twitter">Twitter</a>
+            <a href="http://github.com/splee/" class="github">Github</a>
         </nav>
     </header>
-    <div class="clear"></div>
-    <section class="container_12">
-        {{ content }}
-    </section>
+</div>
+<div class="clear"></div>
+{{ content }}
 </body>
 </html>
