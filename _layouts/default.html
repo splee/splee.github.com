@@ -9,12 +9,6 @@
     <script src="/js/html5.js"></script>
     <script src="http://platform.twitter.com/anywhere.js?id=yMWZ8QSn1TjtVE4xRu7g&amp;v=1">
     </script>
-    <script type="text/javascript">
-        twttr.anywhere(function(twitter) {
-            twitter.hovercards();
-            twitter('#twitter-follow').followButton("splee");
-        });
-    </script>
 </head>
 <body>
 <div class="row">
@@ -29,5 +23,13 @@
 </div>
 <div class="clear"></div>
 {{ content }}
+
+<script type="text/javascript">
+    twttr.anywhere(function(twitter) {
+        twitter.hovercards();
+        twitter('#twitter-follow').followButton("splee");
+    });
+</script>
+
 </body>
 </html>
