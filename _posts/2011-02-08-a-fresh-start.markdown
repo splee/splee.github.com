@@ -2,6 +2,7 @@
 title: A Fresh Start
 layout: post
 guid: d9afc65c84b247f79e55e06d7d8db5fc
+tweet_id: 36931871682072576
 ---
 
 My writing has been almost non-existant for the past couple of years and I'm
