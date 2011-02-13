@@ -6,7 +6,8 @@ $(document).ready(function() {
 		}
 		T("#tweetbox").tweetBox({
 			height: 100,
-			width: 400,
+			width: 580,
+			label: "Tweet your reaction"
 			data: tweet_data
 		});
 	});
