@@ -1,7 +1,7 @@
 ---
 title: A Fresh Start
 layout: post
-id: d9afc65c84b247f79e55e06d7d8db5fc
+guid: d9afc65c84b247f79e55e06d7d8db5fc
 ---
 
 My writing has been almost non-existant for the past couple of years and I'm
