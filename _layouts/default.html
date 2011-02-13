@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="/css/grid.css" />
     <link rel="stylesheet" href="/css/general.css" />
     <script src="/js/html5.js"></script>
+    <script src="http://platform.twitter.com/anywhere.js?id=yMWZ8QSn1TjtVE4xRu7g&amp;v=1">
+    </script>
+    <script type="text/javascript">
+        twttr.anywhere(function(twitter) {
+            twitter.hovercards();
+            twitter('#twitter-follow').followButton("splee");
+        });
+    </script>
 </head>
 <body>
 <div class="row">
@@ -15,8 +23,7 @@
             <h1><a href="/">splee.blog</a></h1>
         </div>
         <nav class="social right">
-            <a href="http://twitter.com/splee" class="twitter">Twitter</a>
-            <a href="http://github.com/splee/" class="github">Github</a>
+            <span id="#twitter-follow"></span>
         </nav>
     </header>
 </div>
