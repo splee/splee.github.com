@@ -8,3 +8,11 @@
 .wrap {
     width: 100%;
 }
+
+.header.wrap {
+	background-color: #333;
+}
+header h1 {
+	margin: 0.2em 0px;
+	color: #fff;
+}
