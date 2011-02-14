@@ -5,11 +5,14 @@ title: splee.blog
 {% assign first_post = site.posts.first %}
 <div class="row">
     <article class="post col_10 col">
-        <h2><a href="{{ first_post.url }}#disqus_thread" data-disqus-identifier="{{ first_post.guid }}">{{ first_post.title }}</a></h2>
+        <h2><a href="{{ first_post.url }}">{{ first_post.title }}</a></h2>
         <div class="meta">
-            Published <time>{{ first_post.date | date_to_string }}</time>
+            Published <time>{{ first_post.date | date_to_string }}</time> |
         </div>
         {{ first_post.content }}
+        <p>
+            <a href="{{ first_post.url}}#disqus_thread" data-disqus-identifier="{{ first_post.guid }}">more...</a>
+        </p>
     </article>
     <aside class="col col_6 social">
         <span id="twitter-follow"></span>
@@ -57,8 +60,9 @@ title: splee.blog
             <ul id="archive">
             {% for post in site.posts %}
             <li>
-                <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.guid }}">{{ post.title }}</a>
+                <a href="{{ post.url }}">{{ post.title }}</a>
                 <time>{{ post.date | date_to_string }}</time>
+                <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.guid }}">read...</a>
             </li>
             {% endfor %}
             </ul>
