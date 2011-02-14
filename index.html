@@ -21,9 +21,9 @@ title: splee.blog
         new TWTR.Widget({
           version: 2,
           type: 'profile',
-          rpp: 4,
+          rpp: 6,
           interval: 6000,
-          width: 250,
+          width: 'auto',
           height: 300,
           theme: {
             shell: {
@@ -37,9 +37,9 @@ title: splee.blog
             }
           },
           features: {
-            scrollbar: false,
+            scrollbar: true,
             loop: false,
-            live: false,
+            live: true,
             hashtags: true,
             timestamp: true,
             avatars: false,
