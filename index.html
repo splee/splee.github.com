@@ -21,25 +21,25 @@ title: splee.blog
         new TWTR.Widget({
           version: 2,
           type: 'profile',
-          rpp: 6,
+          rpp: 4,
           interval: 6000,
-          width: 'auto',
+          width: 250,
           height: 300,
           theme: {
             shell: {
-              background: '#ffffff',
-              color: '#000000'
+              background: '#333333',
+              color: '#ffffff'
             },
             tweets: {
               background: '#ffffff',
               color: '#000000',
-              links: '#333333'
+              links: '#808080'
             }
           },
           features: {
-            scrollbar: true,
+            scrollbar: false,
             loop: false,
-            live: true,
+            live: false,
             hashtags: true,
             timestamp: true,
             avatars: false,
