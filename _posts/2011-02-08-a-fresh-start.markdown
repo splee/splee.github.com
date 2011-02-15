@@ -2,7 +2,6 @@
 title: A Fresh Start
 layout: post
 guid: d9afc65c84b247f79e55e06d7d8db5fc
-tweet_id: 36931871682072576
 ---
 
 My writing has been almost non-existant for the past couple of years and I'm
@@ -18,3 +17,6 @@ is powered by Github and the Jekyll engine they provide; simply set up the
 correct directory structure, push with Git and presto: new blog.
 
 Expect more here in the near future.
+
+**Update (2011-02-15)**: I should mention that my old content is still available
+on [Posterous](http://splee.posterous.com/).
