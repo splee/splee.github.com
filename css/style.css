@@ -20,7 +20,9 @@ header h1 a {
 	color: #eee;
 	text-decoration: none;
     font-family: 'Lobster', arial, serif;
-    text-shadow: 2px 2px 2px #aaa;
+    text-shadow: 2px 2px 2px #666;
+    position: relative;
+    top: -4px
 }
 .col > h2,
 .post h2 a {
