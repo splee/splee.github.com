@@ -19,4 +19,9 @@ header h1 {
 header h1 a {
 	color: #eee;
 	text-decoration: none;
+    font-family: 'Orbitron', arial, serif;
+}
+.col > h2,
+.post h2 a {
+    font-family: 'Vollkorn', arial, serif;
 }
