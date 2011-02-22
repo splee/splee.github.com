@@ -17,7 +17,7 @@ adding imports; moving from the portion of code I'm writing up to the top of the
 file and back again.  Until I found marks, the process was:
 
 * Remember my current line number
-* Use `C-b` to page all the way back through the file
+* Use C-b to page all the way back through the file
 * Add my import at the top
 * Forget my previous line number
 * Search the file for my previous position
@@ -28,14 +28,14 @@ was "there must be an easier way".
 
 There is.
 
-Now when I open any Python file, the first thing I do is hit `m` then `i`. This
-sets a mark assigned to `i` at the top of the file, where `i` stands for
+Now when I open any Python file, the first thing I do is hit m then i. This
+sets a mark assigned to i at the top of the file, where i stands for
 "imports".  Now, when I realise I need to add or remove imports my flow is this:
 
-* Hit `m` then `a`. This assigns my current line to the mark at `a`
-* Hit `'` then `i`. This moves me to the mark at `i` (i.e. the top of the file)
+* Hit m then a. This assigns my current line to the mark at a
+* Hit ' then i. This moves me to the mark at i (i.e. the top of the file)
 * Do the import thing
-* Hit `'` then `a`. This jumps me back to my previous position
+* Hit ' then a. This jumps me back to my previous position
 
 This seems like the same amount of work, but since there's no reliance on
 short-term memory to remember your line number you can learn these keystrokes
