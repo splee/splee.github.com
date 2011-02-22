@@ -25,6 +25,9 @@ header h1 a {
     top: -4px
 }
 .col > h2,
-.post h2 a {
+.post h2 a,
+.post h2,
+.post h3,
+.post h4 {
     font-family: 'Vollkorn', arial, serif;
 }
