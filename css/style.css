@@ -31,3 +31,6 @@ header h1 a {
 .post h4 {
     font-family: 'Vollkorn', arial, serif;
 }
+ul {
+	margin-bottom: 1.52em;
+}
