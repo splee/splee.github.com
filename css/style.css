@@ -24,6 +24,10 @@ header h1 a {
     position: relative;
     top: -4px
 }
+.post p,
+.post ul {
+	font: 1.3em "Lucida Grande", Lucida, Verdana, sans-serif;
+}
 .col > h2,
 .post h2 a,
 .post h2,
