@@ -31,6 +31,14 @@ header h1 a {
 .post h4 {
     font-family: 'Vollkorn', arial, serif;
 }
+.post img {
+	padding: 10px;
+	background-color: white;
+	box-shadow: 3px 3px 4px #EEE;
+	-webkit-box-shadow: 3px 3px 10px #EEE;
+	-moz-box-shadow: 3px 3px 4px #EEE;
+	border: 1px solid #EEE;
+}
 ul {
 	margin-bottom: 1.52em;
 }
