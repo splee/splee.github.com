@@ -60,8 +60,8 @@ title: splee.blog
             <ul id="archive">
             {% for post in site.posts %}
             <li>
-                <a href="{{ post.url }}">{{ post.title }}</a>
                 <time>{{ post.date | date_to_string }}</time>
+                <a href="{{ post.url }}">{{ post.title }}</a>
                 <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.guid }}">read...</a>
             </li>
             {% endfor %}
