@@ -1,6 +1,7 @@
 ---
 title: Using marks in Vim
 layout: post
+guid: 248f34f432be4541a916f26bc3e0f611
 ---
 
 I use [Vim](http://www.vim.org/) every day and have been doing so for about 2

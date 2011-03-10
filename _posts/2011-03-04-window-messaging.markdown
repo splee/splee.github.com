@@ -1,6 +1,7 @@
 ---
 title: Window Messaging
 layout: post
+guid: 860fc5fe445547dc826aeb2f0695be81
 ---
 
 The building where I work is in an area of new development and 
