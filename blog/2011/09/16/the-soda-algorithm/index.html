@@ -5,10 +5,8 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Navel - splee.blog</title>
+  <title>The Soda Algorithm - splee.blog</title>
   <meta name="author" content="Lee McFadden">
-  
-    <meta name="description" content="Category: Navel"/>
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +16,7 @@
 
   
 
-  <link rel="canonical" href="http://splee.co.ukblog/categories/navel/index.html"/>
+  <link rel="canonical" href="http://splee.co.uk/blog/2011/09/16/the-soda-algorithm/"/>
   <link href="/favicon.png" rel="shortcut icon" />
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -59,36 +57,124 @@
   <div id="main">
     <div id="content">
       <div>
-<article>
+<article class="hentry">
   
   <header>
-    <h1 class="entry-title">Category: Navel</h1>
+    
+      <h1 class="entry-title">The Soda Algorithm</h1>
+    
+    
+      <p class="meta">
+
+
+
+
+
+  
+
+
+
+<time datetime="2011-09-16T21:05:00-07:00" pubdate  data-updated="true" >Sep 16<span>th</span>, 2011</time></p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>I think the code speaks for itself.</p>
 
-  
-  <h2>2011</h2>
+<div><script src='https://gist.github.com/1133099.js?file='></script>
+<noscript><pre><code>import random
+from imagination import count_soda, restock_soda
 
-<article>
-  
-<h1><a href="/blog/2011/02/08/a-fresh-start/">A Fresh Start</a></h1>
-<time datetime="2011-02-08T12:00:00-08:00" pubdate><span class='month'>Feb</span> <span class='day'>08</span> <span class='year'>2011</span></time>
+available_sodas = ['Sprite', 'Coke', 'Diet Coke', 'Dr. Pepper']
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/gazing/'>Gazing</a>, <a class='category' href='/blog/categories/navel/'>Navel</a></span>
-</footer>
+def take_soda():
+    soda = random.choice(available_sodas)
+    if count_soda(soda) &lt; 2:
+        restock_soda(soda)
+</code></pre></noscript></div>
 
 
-</article>
+<p>Like any piece of code open to the world, people are at liberty to make forks.  <a href="http://twitter.com/harleyholt">Harley</a> did just that, and I prefer his version.</p>
+
+<div><script src='https://gist.github.com/1133110.js?file='></script>
+<noscript><pre><code>import random
+from imagination import count_soda, restock_soda
+
+available_sodas = ['Sprite', 'Coke', 'Diet Coke', 'Dr. Pepper']
+
+def take_soda(consumer):
+    soda = random.choice(available_sodas)
+    if count_soda(soda) &lt; 2 and not consumer.is_dick():
+        restock_soda(soda)
+    else:
+        pass
+
+</code></pre></noscript></div>
+
+
 
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Lee McFadden</span></span>
+
+      
+
+
+
+
+
+  
+
+
+
+<time datetime="2011-09-16T21:05:00-07:00" pubdate  data-updated="true" >Sep 16<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/soda/'>Soda</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://splee.co.uk/blog/2011/09/16/the-soda-algorithm/" data-via="splee" data-counturl="http://splee.co.uk/blog/2011/09/16/the-soda-algorithm/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+</div>
+
+    
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread"><div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'spleecouk';
+  var disqus_identifier = 'http://splee.co.uk/blog/2011/09/16/the-soda-algorithm/';
+  var disqus_url = 'http://splee.co.uk/blog/2011/09/16/the-soda-algorithm/';
+  //var disqus_developer = 1;
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 

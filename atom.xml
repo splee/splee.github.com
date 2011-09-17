@@ -4,13 +4,55 @@
   <title>splee.blog</title>
   <link href="http://splee.co.uk/atom.xml" rel="self"/>
   <link href="http://splee.co.uk/"/>
-  <updated>2011-09-16T21:02:35-07:00</updated>
+  <updated>2011-09-16T21:13:23-07:00</updated>
   <id>http://splee.co.uk/</id>
   <author>
     <name>Lee McFadden</name>
     
   </author>
 
+  
+  <entry>
+    <title>The Soda Algorithm</title>
+    <link href="http://splee.co.uk/blog/2011/09/16/the-soda-algorithm/"/>
+    <updated>2011-09-16T21:05:00-07:00</updated>
+    <id>http://splee.co.uk/blog/2011/09/16/the-soda-algorithm</id>
+    <content type="html">&lt;p&gt;I think the code speaks for itself.&lt;/p&gt;
+
+&lt;div&gt;&lt;script src=&#8217;https://gist.github.com/1133099.js?file=&#8217;&gt;&lt;/script&gt;
+&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;import random
+from imagination import count_soda, restock_soda
+
+available_sodas = [&#8216;Sprite&#8217;, &#8216;Coke&#8217;, &#8216;Diet Coke&#8217;, &#8216;Dr. Pepper&#8217;]
+
+def take_soda():
+    soda = random.choice(available_sodas)
+    if count_soda(soda) &amp;lt; 2:
+        restock_soda(soda)
+&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Like any piece of code open to the world, people are at liberty to make forks.  &lt;a href=&quot;http://twitter.com/harleyholt&quot;&gt;Harley&lt;/a&gt; did just that, and I prefer his version.&lt;/p&gt;
+
+&lt;div&gt;&lt;script src=&#8217;https://gist.github.com/1133110.js?file=&#8217;&gt;&lt;/script&gt;
+&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;import random
+from imagination import count_soda, restock_soda
+
+available_sodas = [&#8216;Sprite&#8217;, &#8216;Coke&#8217;, &#8216;Diet Coke&#8217;, &#8216;Dr. Pepper&#8217;]
+
+def take_soda(consumer):
+    soda = random.choice(available_sodas)
+    if count_soda(soda) &amp;lt; 2 and not consumer.is_dick():
+        restock_soda(soda)
+    else:
+        pass
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/div&gt;
+
+
+
+</content>
+  </entry>
   
   <entry>
     <title>Window Messaging</title>

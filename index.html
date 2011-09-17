@@ -64,6 +64,70 @@
     
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2011/09/16/the-soda-algorithm/">The Soda Algorithm</a></h1>
+    
+    
+      <p class="meta">
+
+
+
+
+
+  
+
+
+
+<time datetime="2011-09-16T21:05:00-07:00" pubdate  data-updated="true" >Sep 16<span>th</span>, 2011</time></p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I think the code speaks for itself.</p>
+
+<div><script src='https://gist.github.com/1133099.js?file='></script>
+<noscript><pre><code>import random
+from imagination import count_soda, restock_soda
+
+available_sodas = ['Sprite', 'Coke', 'Diet Coke', 'Dr. Pepper']
+
+def take_soda():
+    soda = random.choice(available_sodas)
+    if count_soda(soda) &lt; 2:
+        restock_soda(soda)
+</code></pre></noscript></div>
+
+
+<p>Like any piece of code open to the world, people are at liberty to make forks.  <a href="http://twitter.com/harleyholt">Harley</a> did just that, and I prefer his version.</p>
+
+<div><script src='https://gist.github.com/1133110.js?file='></script>
+<noscript><pre><code>import random
+from imagination import count_soda, restock_soda
+
+available_sodas = ['Sprite', 'Coke', 'Diet Coke', 'Dr. Pepper']
+
+def take_soda(consumer):
+    soda = random.choice(available_sodas)
+    if count_soda(soda) &lt; 2 and not consumer.is_dick():
+        restock_soda(soda)
+    else:
+        pass
+
+</code></pre></noscript></div>
+
+
+
+</div>
+  
+  
+
+
+  </article>
+
+
+  <article>
+    
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2011/03/04/window-messaging/">Window Messaging</a></h1>
     
     
@@ -255,6 +319,10 @@ on <a href="http://splee.posterous.com/">Posterous</a>.</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/09/16/the-soda-algorithm/">The Soda Algorithm</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2011/03/04/window-messaging/">Window Messaging</a>
