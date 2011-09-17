@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>splee.blog</title>
+  <link href="http://splee.co.uk/atom.xml" rel="self"/>
+  <link href="http://splee.co.uk/"/>
+  <updated>2011-09-16T17:28:38-07:00</updated>
+  <id>http://splee.co.uk/</id>
+  <author>
+    <name>Lee McFadden</name>
+    
+  </author>
+
+  
+  <entry>
+    <title>Window Messaging</title>
+    <link href="http://splee.co.uk/blog/2011/03/04/window-messaging/"/>
+    <updated>2011-03-04T00:00:00-08:00</updated>
+    <id>http://splee.co.uk/blog/2011/03/04/window-messaging</id>
+    <content type="html">&lt;p&gt;The building where I work is in an area of new development and
+&lt;a href=&quot;http://www.amazon.com&quot;&gt;Amazon&lt;/a&gt; are our neighbours.  A lot of the buildings in
+the area are unfinished but they&amp;#8217;re slowly becoming populated; People appeared
+next door a few weeks ago and they started writing a message in Post-It notes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://splee.co.uk/images/post-it-message.jpg&quot; alt=&quot;post-it-message&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Not to be outdone, I decided that Post-Its weren&amp;#8217;t a reasonable response from a
+tech company.  Enter the giant QR code.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://splee.co.uk/images/bigdoor-qr.jpg&quot; alt=&quot;bigdoor-qr&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This QR code points to &lt;a href=&quot;http://www.bigdoor.com/&quot;&gt;BigDoor&amp;#8217;s&lt;/a&gt; website and it works
+pretty well.  I hope the QR code is the reason for the truncation of &amp;#8220;are&amp;#8221; and
+the addition of &amp;#8220;hi!&amp;#8221; in their message; there&amp;#8217;s always the possibility they
+happen to be talking to the floor above.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Using marks in Vim</title>
+    <link href="http://splee.co.uk/blog/2011/02/22/vim-marks/"/>
+    <updated>2011-02-22T12:00:00-08:00</updated>
+    <id>http://splee.co.uk/blog/2011/02/22/vim-marks</id>
+    <content type="html">&lt;p&gt;I use &lt;a href=&quot;http://www.vim.org/&quot;&gt;Vim&lt;/a&gt; every day and have been doing so for about 2
+years now.  I&amp;#8217;m nowhere near as efficient as I should be, but the speed at which
+I can now edit files in comparison to my previous text editor
+(&lt;a href=&quot;http://macromates.com/&quot;&gt;TextMate&lt;/a&gt;, naturally) is pretty astounding to me.&lt;/p&gt;
+
+&lt;p&gt;One feature that I use a &lt;em&gt;lot&lt;/em&gt;, especially with Python files, is marks.&lt;/p&gt;
+
+&lt;h3&gt;How to make your life easier&lt;/h3&gt;
+
+&lt;p&gt;While I&amp;#8217;m writing my Python, the number one naviation action I take is when
+adding imports; moving from the portion of code I&amp;#8217;m writing up to the top of the
+file and back again.  Until I found marks, the process was:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Remember my current line number&lt;/li&gt;
+&lt;li&gt;Use C-b to page all the way back through the file&lt;/li&gt;
+&lt;li&gt;Add my import at the top&lt;/li&gt;
+&lt;li&gt;Forget my previous line number&lt;/li&gt;
+&lt;li&gt;Search the file for my previous position&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Clearly this is a function of my poor short-term memory, but even if I
+remembered the line number correctly, that&amp;#8217;s still a lot of steps; My thought
+was &amp;#8220;there must be an easier way&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;There is.&lt;/p&gt;
+
+&lt;p&gt;Now when I open any Python file, the first thing I do is hit m then i. This
+sets a mark assigned to i at the top of the file, where i stands for
+&amp;#8220;imports&amp;#8221;.  Now, when I realise I need to add or remove imports my flow is this:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Hit m then a. This assigns my current line to the mark at a&lt;/li&gt;
+&lt;li&gt;Hit &amp;#8217; then i. This moves me to the mark at i (i.e. the top of the file)&lt;/li&gt;
+&lt;li&gt;Do the import thing&lt;/li&gt;
+&lt;li&gt;Hit &amp;#8217; then a. This jumps me back to my previous position&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;This seems like the same amount of work, but since there&amp;#8217;s no reliance on
+short-term memory to remember your line number you can learn these keystrokes
+so they&amp;#8217;re assigned to muscle memory; It ends up being a &lt;em&gt;lot&lt;/em&gt; quicker.&lt;/p&gt;
+
+&lt;p&gt;This trick isn&amp;#8217;t just good for Python but for any file where you need to jump
+around to specific locations regularly.&lt;/p&gt;
+
+&lt;p&gt;Despite Vim&amp;#8217;s tenure on my system I still feel like I haven&amp;#8217;t begun to scratch
+the surface with this editor. Let me know in the comments if you&amp;#8217;ve found any
+other ways to use marks.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>A Fresh Start</title>
+    <link href="http://splee.co.uk/blog/2011/02/08/a-fresh-start/"/>
+    <updated>2011-02-08T12:00:00-08:00</updated>
+    <id>http://splee.co.uk/blog/2011/02/08/a-fresh-start</id>
+    <content type="html">&lt;p&gt;My writing has been almost non-existant for the past couple of years and I&amp;#8217;m
+yet to find a real reason why. Maybe I just haven&amp;#8217;t had anything interesting to
+write about. Maybe it&amp;#8217;s all &lt;a href=&quot;http://twitter.com/splee&quot;&gt;Twitter&amp;#8217;s&lt;/a&gt; fault.  It&amp;#8217;s
+probably just a preference for relaxing after a long day at work; work that I
+pour all my creativity into, leaving little for my own projects.&lt;/p&gt;
+
+&lt;p&gt;Whatever the reason, it&amp;#8217;s going to change.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;m setting up a new blog purely for my technical writing here.  This blog
+is powered by Github and the Jekyll engine they provide; simply set up the
+correct directory structure, push with Git and presto: new blog.&lt;/p&gt;
+
+&lt;p&gt;Expect more here in the near future.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update (2011-02-15)&lt;/strong&gt;: I should mention that my old content is still available
+on &lt;a href=&quot;http://splee.posterous.com/&quot;&gt;Posterous&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  
+</feed>
